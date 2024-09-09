@@ -58,6 +58,14 @@ ul.top_h li a.active:after {
 .nav-link{
   color: #000000;
 }
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 10px;
+  padding-left: 15px;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: red;
+  height: 8px;
+}
 .banner_search_panel{
   position: absolute;
   width: 50%;
@@ -68,6 +76,7 @@ ul.top_h li a.active:after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1041;
 }
 .nav-tabs, .nav-tabs .nav-link{
   border: 0px;
@@ -219,6 +228,7 @@ button.slick-prev {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  font-style: italic;
 }
 button.nav-link .arr{
   position: relative;
@@ -473,13 +483,13 @@ a#scroll {
 }
 #floater {
   position: absolute;
-  top: 45%;
+  top: 275px;
   right: 1px;
   width: 60px;
   height: auto;
   -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-  z-index: 1;
+  z-index: 1041;
   border-radius: 3px 0 0 3px;
   padding: 10px;
   background-color: #ffffff;
@@ -513,8 +523,8 @@ a#scroll {
 .goog-te-combo {
   margin: 4px 0;
   display: block;
-  width: 100%;
-  padding: .375rem 2.25rem .375rem .75rem;
+  width: 120px;
+  padding: .375rem 0.25rem .375rem .75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
   font-weight: 400;
